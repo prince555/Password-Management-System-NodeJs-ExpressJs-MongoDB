@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/pms', {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://prince:9949606614@cluster0-rnlcj.mongodb.net/pms?retryWrites=true&w=majority', {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true});
 var conn =mongoose.Collection;
 var passcatSchema =new mongoose.Schema({
     passord_category: {type:String, 
